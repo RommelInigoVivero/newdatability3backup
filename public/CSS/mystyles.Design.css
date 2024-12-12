@@ -1,0 +1,359 @@
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+    align-items: center;
+  }
+
+  .button-container input[type="submit"],
+  .button-container a {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .button-container input[type="submit"] {
+    border-color: #4CAF50;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button-container input[type="submit"]:focus,
+  .button-container a:focus {
+    outline: 2px solid #4CAF50;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+.photo-preview {
+    width: 150px;  /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    object-fit: cover; /* Ensure the image is cropped and maintains 1x1 aspect ratio */
+}
+@media print {
+    @page {
+        margin: 0; /* Set page margins to 0 */
+    }
+
+    body {
+        margin: 0; /* Remove margins */
+        padding: 0; /* Remove padding */
+    }
+
+    /* Hide buttons when printing */
+    button,
+    .btn {
+        display: none; /* This hides buttons when printing */
+    }
+}
+
+/* Logo section styling */
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+}
+
+.headers {
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 0;
+    padding: 0;
+}
+
+.headers h2, .headers h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form sections */
+#form-section {
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: 130%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#picture {
+    width: 10px;
+    height: 200px;
+    border: 2px solid black; /* Outer border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Borders for rows and columns inside the form */
+.form-group, .form-group.row, .col {
+    border: 1px solid black; /* Inner border */
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    padding: 5px; /* Add padding inside the form group for spacing */
+}
+
+.row {
+    margin: 0;
+    border-style: none;
+}
+
+.col-md-9, .col-md-3, .col-md-4 {
+    padding: 0;
+}
+
+/* Style for the Civil Status section */
+#universal {
+    border: 1px solid black; /* Inner border */
+    max-width: 1200px;
+
+}
+
+#civil .form-group {
+    margin-bottom: 0; /* Remove default margin */
+}
+
+#universal label {
+    margin-left: 5px; /* Add some spacing between the radio button and label */
+}
+#disability-section{
+    margin-left: 30px;
+    font-weight: normal;
+}
+.custom-input{
+    width: 100px;  /* Adjust width as needed */
+    height: 20px;  /* Adjust height as needed */
+}
+
+
+
+
+/*MY NEW STUFF ADDED */
+
+.underline-input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 95%;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.underline-input:focus {
+    outline: none;
+    border-bottom: 2px solid black; /* Thicker line on focus */
+}
+
+/* Print-specific adjustments */
+@media print {
+    html, body {
+        width: 100%;
+        height: auto;
+        /* Set to legal paper size */
+        size: 8.5in 14in; /* For legal size (8.5" x 14") */
+    }
+
+    /* Ensure the form prints correctly and fits within standard legal size paper */
+    .container {
+        width: 100%;
+        max-width: 850px; /* Can adjust as necessary */
+    }
+
+    #form-section {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Ensure logo is properly aligned */
+    #logo img {
+        width: 120px;
+    }
+
+    /* Adjust form sections for print alignment */
+    #picture {
+        width: 100px;
+        height: 150px;
+        font-size: 12px;
+    }
+
+    .form-group, .row, .col {
+        border: 1px solid black; /* Keep borders for clarity in the printed version */
+    }
+
+    /* Optional: Adjust font size for better readability in print */
+    .headers h2, .headers h5 {
+        font-size: 16px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+
+:root{
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+    
+}
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8f0; /* Light Greenish Background */
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0;
+    padding: 0;
+    background-color: #1d2030;;
+    
+}
+#sidebar{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 280px;
+    padding: 5px 1em;
+    background-color: var(--base-clr);
+    border-right: 1px solid var (--line-clr);
+    position: sticky;
+    top: 0;
+    align-self: start;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+#sidebar.close{
+    padding: 5px;
+    width: 60px;
+}
+
+#sidebar ul{
+    list-style: none;
+}
+#sidebar > ul >li:first-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    .logo{
+        font-weight: 600;
+    }
+
+}
+#sidebar ul li.active a{
+    color: var(--accent-clr);
+
+    svg{
+        fill:var(--accent-clr);
+    }
+}
+
+#sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    color: var(--text-clr);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.dropdown-btn{
+ width: 100%;
+ text-align: left;
+ background: none;
+ border: none;
+ font: inherit;
+ cursor: pointer;
+}
+
+#sidebar svg{
+    flex-shrink: 0;
+    fill: var(--text-clr)
+}
+#sidebar a span, #sidebar .dropdown-btn span{
+    flex-grow: 1; 
+}
+#sidebar a:hover, #sidebar .dropdown-btn:hover{
+    background-color: var(--hover-clr);
+}
+#sidebar .sub-menu{
+    display: grid ;
+    grid-template-rows: 0fr;
+    transition: 300ms ease-in-out;
+    > div{
+        overflow: hidden;
+    }
+}
+#sidebar .sub-menu.show{
+    grid-template-rows: 1fr;
+   
+}
+.dropdown-btn svg{
+    transition: 200ms ease;
+}
+
+.rotate svg:last-child {
+    rotate: -180deg;
+}
+
+#sidebar .sub-menu a{
+    padding-left: 2em;
+}
+
+#toggle-btn{
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+
+    svg{
+        transition: rotate 150 ms ease;
+    }
+}
+#toggle-btn:hover{
+    background-color: var(--hover-clr);
+}

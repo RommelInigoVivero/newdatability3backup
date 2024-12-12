@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+.photo-preview {
+    width: 150px;  /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    object-fit: cover; /* Ensure the image is cropped and maintains 1x1 aspect ratio */
+}
+@media print {
+    @page {
+        margin: 0; /* Set page margins to 0 */
+    }
+
+    body {
+        margin: 0; /* Remove margins */
+        padding: 0; /* Remove padding */
+    }
+
+    /* Hide buttons when printing */
+    button,
+    .btn {
+        display: none; /* This hides buttons when printing */
+    }
+}
+
+/* Logo section styling */
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+}
+
+.headers {
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 0;
+    padding: 0;
+}
+
+.headers h2, .headers h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form sections */
+#form-section {
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: 130%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#picture {
+    width: 10px;
+    height: 200px;
+    border: 2px solid black; /* Outer border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Borders for rows and columns inside the form */
+.form-group, .form-group.row, .col {
+    border: 1px solid black; /* Inner border */
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    padding: 5px; /* Add padding inside the form group for spacing */
+}
+
+.row {
+    margin: 0;
+    border-style: none;
+}
+
+.col-md-9, .col-md-3, .col-md-4 {
+    padding: 0;
+}
+
+/* Style for the Civil Status section */
+#universal {
+    border: 1px solid black; /* Inner border */
+    max-width: 1200px;
+
+}
+
+#civil .form-group {
+    margin-bottom: 0; /* Remove default margin */
+}
+
+#universal label {
+    margin-left: 5px; /* Add some spacing between the radio button and label */
+}
+#disability-section{
+    margin-left: 30px;
+    font-weight: normal;
+}
+.custom-input{
+    width: 100px;  /* Adjust width as needed */
+    height: 20px;  /* Adjust height as needed */
+}
+
+
+
+
+/*MY NEW STUFF ADDED */
+
+.underline-input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 95%;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.underline-input:focus {
+    outline: none;
+    border-bottom: 2px solid black; /* Thicker line on focus */
+}
+
+/* Print-specific adjustments */
+@media print {
+    html, body {
+        width: 100%;
+        height: auto;
+        /* Set to legal paper size */
+        size: 8.5in 14in; /* For legal size (8.5" x 14") */
+    }
+
+    /* Ensure the form prints correctly and fits within standard legal size paper */
+    .container {
+        width: 100%;
+        max-width: 850px; /* Can adjust as necessary */
+    }
+
+    #form-section {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Ensure logo is properly aligned */
+    #logo img {
+        width: 120px;
+    }
+
+    /* Adjust form sections for print alignment */
+    #picture {
+        width: 100px;
+        height: 150px;
+        font-size: 12px;
+    }
+
+    .form-group, .row, .col {
+        border: 1px solid black; /* Keep borders for clarity in the printed version */
+    }
+
+    /* Optional: Adjust font size for better readability in print */
+    .headers h2, .headers h5 {
+        font-size: 16px;
+    }
+}
+

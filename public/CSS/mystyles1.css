@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Logo section styling */
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+}
+
+.headers {
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 0;
+    padding: 0;
+}
+
+.headers h2, .headers h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form sections */
+#form-section {
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: 120%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Borders for rows and columns inside the form */
+.form-group, .form-group.row, .col {
+    border: 1px solid black; /* Inner border */
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    padding: 5px; /* Add padding inside the form group for spacing */
+}
+
+.row {
+    margin: 0;
+}
+
+.col-md-9, .col-md-3, .col-md-4 {
+    padding: 0;
+}
+
+/* Style for the Civil Status section */
+#universal {
+    border: 1px solid black; /* Inner border */
+    max-width: 1200px;
+
+}
+
+#civil .form-group {
+    margin-bottom: 0; /* Remove default margin */
+}
+
+#universal label {
+    margin-left: 5px; /* Add some spacing between the radio button and label */
+}
+#disability-section{
+    margin-left: 30px;
+    font-weight: normal;
+}
+.custom-input{
+    width: 100px;  /* Adjust width as needed */
+    height: 20px;  /* Adjust height as needed */
+}

@@ -1,0 +1,120 @@
+        /* General styling for the steps */
+        .step { display: none; }
+        .step.active { display: block; }
+
+        /* Container for the form */
+        .form-container { max-width: 100%; margin: 50px auto; }
+
+        /* Styling for the card containing the form */
+        .form-card {
+            padding: 30px; 
+            margin: 20px 0; 
+            background-color: #f9f9f9; 
+            border: 3px solid #ddd; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .footer {
+            
+            color: black;
+            text-align: center;
+            
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Common border for steps */
+        .form-step {
+            margin-bottom: 30px; 
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px; 
+            padding: 20px; 
+            background-color: #f9f9f9; 
+        }
+
+        /* Header styling for each step */
+        .step-header { font-size: 24px; margin-bottom: 20px; }
+
+        /* Margin for step buttons */
+        .btn-step { width: 120px; } 
+
+        /* ID picture section styling */
+        .id-picture { text-align: center; }
+        .id-picture img { width: 150px; height: 150px; border-radius: 5px; object-fit: cover; }
+
+        /* Margin for file upload input */
+        .file-upload { margin-top: 10px; }
+
+        /* Style for input boxes */
+        .form-control {
+            width: 80%; 
+            max-width: 400px; 
+            margin: 10px 0; 
+        }
+
+        .applicant-section {
+            display: flex; 
+            flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+
+        .applicant-content {
+            flex: 1; 
+            margin-right: 20px; 
+        }
+
+        .applicant-content:last-child {
+            margin-right: 0; 
+        }
+
+        /* Align buttons on the right */
+        .button-group { display: flex; justify-content: flex-end; margin-top: 20px; gap: 10px; } 
+
+        /* Ensure all buttons have the same height */
+        .btn {
+            height: 40px; 
+            line-height: 15px; 
+        }
+
+        /* Highlight for error */
+        .is-invalid {
+            border-color: red;
+        }
+        #reviewSection {
+        width: 100%; /* Full width of the parent */
+        max-width: 1000px; /* Increased maximum width for better layout */
+        margin: 0 auto; /* Center the review section */
+        padding: 20px; /* Add padding around the content */
+        display: flex; /* Use Flexbox for centering */
+        justify-content: center; /* Center horizontally */
+    }
+
+    #applicant {
+        text-align: left; /* Align text to the left */
+        width: 100%; /* Use full width of its container */
+        max-width: 1000px; /* Limit width for better layout */
+        padding: 20px; /* Add padding inside the applicant box */
+        border: 1px solid #ccc; /* Optional: add a border */
+        border-radius: 5px; /* Optional: round corners */
+        background-color: #f9f9f9; /* Optional: background color */
+        margin: 0 auto; /* Center it */
+    }
+
+    /* Optional: Add styling for h4 to enhance appearance */
+    h4 {
+        margin-top: 20px; /* Add space above h4 */
+        margin-bottom: 10px; /* Add space below h4 */
+    }
+
+
+    
+    .logo {
+        height: 130px;
+        margin: 0 100px; /* Adds space around both logos */
+    }
+    
+    .text-center h1, .text-center h6 {
+        text-align: center;
+    }

@@ -1,0 +1,268 @@
+body {
+    background-color: #daf4dd !important;
+}
+/* Input text for multi-select tags */
+.multi-select-tag input[type="text"] {
+    width: 150px; /* Set your desired width */
+    padding: 5px; /* Adjust padding if needed */
+}
+
+/* Styles for expired rows */
+.expired-row {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red text */
+}
+
+/* Highlight ages above 60 */
+.age-highlight {
+    color: red; /* Red text for ages > 60 */
+}
+
+/* Prevent blue color for dropdown links */
+.navbar-nav .nav-link {
+    color: white !important; /* Use white text for links */
+}
+
+/* Optional: Change color on hover */
+.navbar-nav .nav-item:hover .nav-link {
+    color: #fff; /* Adjust as needed */
+}
+
+/* Cursor style for clickable rows */
+.clickable-row {
+    cursor: pointer;
+}
+
+/* Table hover effect */
+table tbody tr:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 10px; /* Rounded corners for modals */
+}
+.modal-header, .modal-footer {
+    border: none; /* Remove border for a cleaner look */
+}
+.modal-title {
+    font-weight: bold; /* Bold title */
+}
+.modal-body {
+    padding: 20px; /* Add padding for better spacing */
+}
+.modal-body h6 {
+    margin-top: 0; /* Remove margin from the top of headings */
+}
+.modal-body ul {
+    padding-left: 15px; /* Indent list items */
+}
+
+/* Card styles */
+.card {
+    border: none;
+}
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Change to your preferred color */
+}
+.card p {
+    margin-bottom: 10px;
+}
+
+/* Custom modal header */
+.modal-header-custom {
+    background-color: #31a02b; /* Change to your preferred color */
+    color: white;
+}
+.modal-header-custom .close {
+    color: white; /* Ensure the close button is visible */
+}
+
+/* Disease content styling */
+.disease-content {
+    padding: 10px;
+    font-size: 14px;
+}
+.disease-content div {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Custom button styles */
+.custom-button {
+    padding: 8px 12px; /* Adjust padding as needed */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-weight: 600; /* Make text slightly bolder */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+.custom-button:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+.custom-button:focus {
+    outline: none; /* Remove focus outline */
+}
+.btn-info.custom-button {
+    background-color: #17a2b8; /* Bootstrap info color */
+    border-color: #17a2b8; /* Match border color */
+}
+.btn-secondary.custom-button {
+    background-color: #6c757d; /* Bootstrap secondary color */
+    border-color: #6c757d; /* Match border color */
+}
+
+/* Material icons */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+/* Checkboxes dropdown */
+.checkboxes {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Set a fixed width to accommodate checkboxes */
+    max-height: 150px; /* Optional: Limit height */
+    overflow-y: auto; /* Optional: Add scroll if content exceeds max height */
+}
+.checkboxes label {
+    display: flex; /* Use flex for better alignment */
+    align-items: center;
+    margin-bottom: 5px; /* Space between labels */
+}
+
+/* Show dropdown checkboxes on hover */
+.dropdown:hover .checkboxes {
+    display: block;
+}
+
+/* Additional enhancements for table buttons */
+.table td button {
+    margin-right: 5px; /* Spacing between buttons */
+}
+
+/* Striped table rows */
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Modern Office Theme Styles */
+.table {
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: bold;
+    text-align: center;
+    
+
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.expired-row {
+    background-color: #f8d7da;
+}
+
+.record-checkbox {
+    margin: 0;
+}
+
+.btn {
+    margin: 2px;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Add any additional styles for buttons if needed */
+.custom-button {
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #007bff; /* Change to a desired color on hover */
+    color: white;
+}
+.table-container {
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Active state */
+.nav-item.active .nav-link {
+    background-color: #0f4b26; /* Darker green or your desired color */
+    color: #fff; /* Text color when active */
+}
+
+/* Hover state */
+.nav-item .nav-link:hover {
+    background-color: #146400; /* Lighter green or your desired hover color */
+    color: #fff; /* Text color on hover */
+}
+/* Apply padding and light gray borders to table cells */
+table.table td {
+    padding: 10px;
+    border: 1px solid black; /* Light gray border for cells */
+}
+
+/* Alternate row colors (zebra stripes) for even rows */
+table.table tbody tr:nth-child(even) {
+    background-color: #d4f7cc; /* Light gray for even rows */
+}
+
+/* Alternate row colors for odd rows */
+table.table tbody tr:nth-child(odd) {
+    background-color: #a1e9a9; /* White for odd rows */
+}
+
+/* Hover effect for rows */
+table.table tbody tr:hover {
+    background-color: #fe94d9; /* Light gray background on hover */
+}
+
+.custom-header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+.custom-footer {
+    background-color: #f1f1f1; /* Light gray background */
+}
+
+.btn-close {
+    background-color: #ffffff;
+}
+
+.btn-close:hover {
+    background-color: #e0e0e0;
+}

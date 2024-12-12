@@ -1,0 +1,208 @@
+/* Global Body Styling */
+body {
+    background-color: #121212 !important; /* Darker background for the body */
+    color: white; /* Ensure text color is white */
+}
+
+/* Modal Styling */
+.modal-content {
+    background-color: #1f1f1f; /* Darker background for modals */
+    color: white; /* White text in the modal */
+}
+
+/* Navbar and Elements Styling */
+.navbar, .navbar .nav-link, .navbar .navbar-brand, .dropdown-item, .dropdown-menu, .btn {
+    color: white !important; /* Force text color to white */
+}
+
+/* Table Styling */
+.table, .table th, .table td {
+    color: white !important; /* White text in the table */
+    background-color: #333; /* Dark background for table rows */
+}
+
+/* Modal Header and Body Styling */
+.modal-header, .modal-body, .modal-title {
+    color: white !important;
+}
+
+/* Button Styling */
+.btn, .btn:hover {
+    color: white !important; /* Ensure button text is white */
+    background-color: #444; /* Dark button background */
+    border-color: #555; /* Dark border for buttons */
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    color: white !important;
+    background-color: #333; /* Dark background for dropdown */
+}
+label {
+    color: white !important;
+}
+h1 {
+    color: white !important;
+}
+/* Form Control and Input Styling */
+#search, select, .form-control {
+    color: white !important; /* Ensure text color in search and input fields is white */
+    background-color: #333; /* Dark input background */
+    border-color: #555; /* Dark border for inputs */
+}
+
+/* Adjust hover effects for dropdown and button items */
+.dropdown-item:hover, .btn:hover {
+    background-color: #444; /* Dark background on hover */
+}
+
+/* Ensuring a consistent dark theme for other interactive elements */
+.form-control:focus, .btn:focus {
+    background-color: #444; /* Focused elements with a dark background */
+    border-color: #666; /* Focused border color */
+}
+
+/* General Input field styling */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text color */
+    border-color: #555; /* Darker border color for input fields */
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    background-color: #333;
+    border: 1px solid #555;
+    color: white !important; /* White color for checkbox label */
+}
+
+/* Checkbox checked state */
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+    border: 1px solid #388E3C;
+}
+
+/* Apply to dropdown label text */
+.dropdown-label {
+    color: white !important; /* Ensure the label text is white */
+}
+
+/* Styling for checkboxes inside the dropdown */
+.checkboxes label {
+    color: white !important; /* White text for each checkbox label */
+    display: block; /* Ensure each checkbox is on a new line */
+}
+
+/* Add dark background and white text to the dropdown container */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Ensure dropdown items (checkboxes) have a dark background and white text */
+.checkboxes input[type="checkbox"]:focus {
+    outline-color: #555 !important; /* Focused state with darker outline */
+}
+
+/* Styling for dropdown label and checkbox input */
+.dropdown-label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #444;
+    border: 1px solid #666;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Checkboxes inside the dropdown */
+.checkboxes {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 4px;
+    z-index: 1;
+    padding: 10px;
+    max-height: none; /* Remove the max-height to return the original size */
+    overflow-y: visible; /* Allow the dropdown to expand freely */
+}
+
+/* Make sure checkboxes are displayed as blocks */
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Show dropdown checkboxes on hover */
+.dropdown:hover .checkboxes {
+    display: block;
+}
+/* Input text for multi-select tags */
+.multi-select-tag input[type="text"] {
+    width: 150px; /* Set your desired width */
+    padding: 5px; /* Adjust padding if needed */
+}
+
+
+
+/* Modal Background and Content */
+.modal-content {
+    background-color: #1f1f1f; /* Dark background for modal */
+    color: white; /* White text for modal */
+}
+
+/* Modal Header Styling */
+.modal-header {
+    background-color: #333; /* Darker background for the header */
+    color: white; /* White text for the modal title */
+}
+
+/* Modal Close Button */
+.modal-header .close {
+    color: white; /* White color for the close button */
+}
+
+/* Modal Body */
+.modal-body {
+    background-color: #2a2a2a; /* Slightly lighter background for modal body */
+}
+
+/* Modal Footer */
+.modal-footer {
+    background-color: #333; /* Dark background for footer */
+}
+
+/* Card Styling */
+.card {
+    background-color: #333; /* Dark background for cards */
+    border-color: #555; /* Darker border for cards */
+}
+
+.card-body {
+    background-color: #333;
+}
+/* Card Header Background */
+.card-header {
+    background-color: #444; /* Dark background for card headers */
+    color: white; /* White text for card headers */
+}
+
+/* Button Styling in Modal */
+.btn-secondary {
+    background-color: #444; /* Dark background for Close button */
+    border-color: #555; /* Dark border for Close button */
+    color: white; /* White text for button */
+}
+
+/* Disease Content Section */
+.disease-content {
+    color: white; /* White text for disease content */
+    background-color: #333; /* Dark background for the disease list */
+    padding: 10px; /* Padding inside the content */
+}
+
+/* Ensure text in modal headers is white */
+.modal-title {
+    color: white;
+}
